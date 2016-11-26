@@ -12,7 +12,7 @@ var core_1 = require("angular2/core");
 var model_1 = require("./model");
 var MyApp = (function () {
     function MyApp() {
-        this.titulo = "HOLA MUNDO";
+        this.titulo = "HOLA MUNDO!!!!";
         this.model = new model_1.MyModel();
     }
     MyApp.prototype.getCompiler = function () {
