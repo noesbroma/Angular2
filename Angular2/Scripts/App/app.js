@@ -9,19 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("angular2/core");
-var model_1 = require("./model");
+//import { MyModel } from "./model"
+var Pelicula_1 = require("./models/Pelicula");
 var MyApp = (function () {
     function MyApp() {
-        this.titulo = "HOLA MUNDO!!!!";
-        this.model = new model_1.MyModel();
+        //this.pelicula = "Batman v Superman";
+        //this.director = "Zack Snider";
+        //this.ano = 2016;
+        this.titulo = "Peliculas con Angular 2";
+        this.pelicula = new Pelicula_1.Pelicula(1, "Batman v Superman", "Zack Snider", 2016);
     }
-    MyApp.prototype.getCompiler = function () {
-        return this.model.compiler;
-    };
     MyApp = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<div>{{titulo}}</div>'
+            templateUrl: "src/views/peliculas.html"
         }), 
         __metadata('design:paramtypes', [])
     ], MyApp);
