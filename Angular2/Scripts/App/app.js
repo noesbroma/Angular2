@@ -13,16 +13,27 @@ var core_1 = require("angular2/core");
 var Pelicula_1 = require("./models/Pelicula");
 var MyApp = (function () {
     function MyApp() {
+        this.titulo = "Peliculas con Angular 2";
         //this.pelicula = "Batman v Superman";
         //this.director = "Zack Snider";
         //this.ano = 2016;
-        this.titulo = "Peliculas con Angular 2";
+        this.mostrarDatos = false;
         this.pelicula = new Pelicula_1.Pelicula(1, "Batman v Superman", "Zack Snider", 2016);
     }
+    MyApp.prototype.onShowHide = function (value) {
+        this.mostrarDatos = value;
+    };
     MyApp = __decorate([
         core_1.Component({
             selector: 'my-app',
-            templateUrl: "src/views/peliculas.html"
+            templateUrl: "src/views/peliculas.html",
+            //template: `<h1>{{titulo}}</h1>
+            //            <ul>
+            //                <li>Titulo: <strong>{{pelicula}}</strong></li>
+            //                <li>Director: <strong>{{director}}</strong></li>
+            //                <li>Año: <strong>{{ano}}</strong></li>
+            //            </ul>`
+            styleUrls: ["Content/angularStyles.css"]
         }), 
         __metadata('design:paramtypes', [])
     ], MyApp);
