@@ -19,6 +19,13 @@ var MyApp = (function () {
         //this.ano = 2016;
         this.mostrarDatos = false;
         this.pelicula = new Pelicula_1.Pelicula(1, "Batman v Superman", "Zack Snider", 2016);
+        this.peliculas = [
+            new Pelicula_1.Pelicula(1, "Batman v Superman", "Zack Snider", 2016),
+            new Pelicula_1.Pelicula(2, "La verdad duele", "Will Smith", 2016),
+            new Pelicula_1.Pelicula(3, "El señor de los anillos", "Desconocido", null),
+            new Pelicula_1.Pelicula(4, "Una historia real", "El de supersalidos", 2015),
+            new Pelicula_1.Pelicula(5, "Don Jon", "Josep Gordon Levit", null)
+        ];
     }
     MyApp.prototype.onShowHide = function (value) {
         this.mostrarDatos = value;
