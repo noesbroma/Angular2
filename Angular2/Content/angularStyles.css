@@ -6,3 +6,17 @@
 .showingData {
     display: none;
 }
+
+.peliculaTitle {
+    cursor: pointer;
+}
+
+.peliculaTitle:hover {
+    text-decoration: underline;    
+}
+
+.clicked {
+    font-size: 30px;
+    color: green;
+    font-family: Arial;    
+}

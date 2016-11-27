@@ -12,7 +12,10 @@
     "./src/app.ts",
     "./src/model.ts",
     "./src/main.ts",
-    "./typings/index.d.ts"
+    "./typings/index.d.ts",
+    "./src/components/peliculasListComponent.ts",
+    "./src/components/peliculasFooterComponent.ts"
+    //"./src/pelicula.ts"
   ],
   "compileOnSave": true
 
